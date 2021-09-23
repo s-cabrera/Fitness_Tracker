@@ -41,16 +41,26 @@ router.get("/api/workouts/", async (req, res) => {
     }
 })
 
-router.get("/api/workouts/range", (req, res) => {
-    Workout.find({})
-        .sort({ day: +1 })
-        .then(workout => {
-            console.log(workout)
-            res.status(200).json(workout)
-        })
-        .catch(err => {
-            res.status(400).json(err)
-        })
+router.get("/api/workouts/range", async(req, res) => {
+    const workout = await Workout.find({})
+        .sort({ day: +1 });
+    if(workout){
+        console.log(workout)
+        const results = await Workout.aggregate([
+        { 
+            $addFields: {
+                totalDuration: {
+                    $sum: "$exercises.duration"
+                } 
+            }
+        }
+        ]);
+        console.log(results);
+        res.status(200).json(results)
+    }
+    else{
+        res.status(400).json("Something went wrong when retrieving your workouts")
+    }
 })
 
 
