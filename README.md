@@ -1,6 +1,22 @@
-# Unit 18 Nosql Homework: Workout Tracker
+# Fitness Tracker
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+## Description 
+This application uses a Mongo database with a Mongoose schema and handles routes with Express.
+
+## Table of Contents 
+
+* [User Story](#user-story)
+
+* [Business Context](#business-context)
+
+* [Functionality](#functionality)
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [Questions](#questions)
 
 ## User Story
 
@@ -10,7 +26,7 @@ For this assignment, you'll create a workout tracker. You have already been prov
 
 A consumer will reach their fitness goals more quickly when they track their workout progress.
 
-## Acceptance Criteria
+## Functionality
 
 When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
 
@@ -24,38 +40,42 @@ The user should be able to:
 
   * View the total duration of each workout from the past seven workouts on the `stats` page.
 
-> **Important:** Look into using a MongoDB aggregate function to dynamically add up and return the total duration for each workout. Check out the [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/), the [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/), and the [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate) to learn how it can be accomplished.
 
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
+## Installation
+1. Clone the repository to your local computer
 
-  * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
+```bash
+git clone https://github.com/s-cabrera/Fitness_Tracker.git
+```
 
-  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
+2. Install dependencies
+```bash
+npm install
+```
 
-## Commit Early and Often
+3. Set up a Mongo database with [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/efficiency?utm_content=controlaterms&utm_source=google&utm_campaign=gs_americas_united_states_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624338&gclid=CjwKCAjwy7CKBhBMEiwA0Eb7aunO0eoHlak6jpPH6XZVEdZGCgStSlhJ2TvVG5Zhqn6roECPOSX4ZhoCeGIQAvD_BwE)
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for the following two reasons:
+4. Deploy with [Heroku](https://id.heroku.com/login)
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+## Usage
+Assuming that your connection works, seed your database.
+```bash
+npm run seed
+```
 
-2. Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+If you're running locally, enter the following command to start your application:
+```bash
+npm start
+```
 
-Follow these guidelines for committing:
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+## License
+MIT 
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+## Questions
+If you have any questions about the application, open an issue or contact me directly at stephanie.cabrera.333@gmail.com. You can find more of my work at my [Github](https://github.com/s-cabrera/). 
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We want you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL to the deployed application
-
-* The URL to the GitHub repository
+<a href="mailto:stephanie.cabrera.333@gmail.com?"><img src="paper-plane-solid.svg" width="30" height="30"/></a>
+<a href="https://www.linkedin.com/in/stephanie-cabrera-809999139/"><img src="linkedin-brands.svg" width="30" height="30"/></a>
+<a href="https://github.com/s-cabrera/"><img src="github-brands.svg" width="30" height="30"/></a>
+<a href="https://s-cabrera.github.io/Portfolio/"><img src="clipboard-list-solid.svg" width="30" height="30"/></a>
