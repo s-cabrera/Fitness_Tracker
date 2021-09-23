@@ -29,6 +29,23 @@ router.get("/api/workouts/", (req, res) => {
         })
 })
 
+//Add exercise 
+router.put("/api/workouts/:id", (req, res) => {
+    console.log(req.body);
+    Workout.findByIdAndUpdate(
+        {"_id": req.params.id}, 
+        {"$push": { "exercises": req.body }}, 
+        (err, data) => {
+            if(err){
+                res.status(400).json(err);
+            }
+            else{
+                res.status(200).send(data);
+                console.log("Data updated!");
+            }
+    })
+})
+
 
 
 module.exports = router;
