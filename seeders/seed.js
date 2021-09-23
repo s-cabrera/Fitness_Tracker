@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const db = require('../models');
 
+
+
 mongoose.connect('mongodb://localhost/workout', {
   useNewUrlParser: true,
   useFindAndModify: false,
@@ -135,3 +137,12 @@ db.Workout.deleteMany({})
     console.error(err);
     process.exit(1);
   });
+// db.Workout.aggregate([
+//         { $unwind: "$exercises" },
+//         { $group: {
+//             _id: null,
+//             totalDuration: { $sum: "$exercises.duration" }
+//           }
+//         },
+//        {$addFields: {totalDuration: "$totalDuration"} }
+// ])
