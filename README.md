@@ -76,7 +76,7 @@ MIT
 ## Questions
 If you have any questions about the application, open an issue or contact me directly at stephanie.cabrera.333@gmail.com. You can find more of my work at my [Github](https://github.com/s-cabrera/). 
 
-<a href="mailto:stephanie.cabrera.333@gmail.com?"><img src="paper-plane-solid.svg" width="30" height="30"/></a>
+<a href="mailto:stephanie.cabrera.333@gmail.com?"><img src="paper-plane-solid.svg" style="fill: white" width="30" height="30"/></a>
 <a href="https://www.linkedin.com/in/stephanie-cabrera-809999139/"><img src="linkedin-brands.svg" width="30" height="30"/></a>
 <a href="https://github.com/s-cabrera/"><img src="github-brands.svg" width="30" height="30"/></a>
 <a href="https://s-cabrera.github.io/Portfolio/"><img src="clipboard-list-solid.svg" width="30" height="30"/></a>
